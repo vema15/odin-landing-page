@@ -1,7 +1,7 @@
 /*Type Selectors*/
 
 body {
-    height: 50vh;
+    height: 100vh;
     margin: 0;
     overflow-x: scroll;
 }
@@ -24,7 +24,8 @@ a {
 .body-3,
 .footer {
     display: flex;
-   
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .header,
@@ -36,13 +37,13 @@ a {
 
 .header,
 .footer {
-    height:15vh;
+    min-height:15vh;
 }
 
 .sub-header,
 .body-1,
 .body-2 {
-    height: 70vh;
+    min-height: 45vh;
 }
 
 
@@ -81,23 +82,28 @@ a {
 .sub-header {
     display: flex;
     align-items: center;
-    overflow: scroll;
+    padding-right: 5%;
+    padding-left: 5%;
+    gap: 10px;
 
+    
     
 }
 
 .sh-l-box,
 .sh-r-box {
     display: flex;
-    margin-right: 5%;
-    margin-left: 5%;
     width: 50%;
     height: 50%;
+
+    border: 1px solid black;
 }
 
 .sh-l-box {
     flex-direction: column;
+    justify-content: space-between;
     gap: 7px;
+    height: 50%;
 }
 
 .sh-l-box button{    
@@ -106,11 +112,21 @@ a {
 
     width: 100px;
     border-radius: 10px;
-    padding: 2% 2% 2% 2%;
+    padding: 5px 5px 5px 5px;
     border: none;
 
 
 }
+
+.sh-lb-body,
+.sh-lb-head,
+.sh-lb-su {
+    display: flex;
+    width: auto;
+    
+}
+
+
 
 .sh-lb-head {
     font-size: 48px;
@@ -123,23 +139,30 @@ a {
     color: #E5E7EB;
 }
 
-.sh-r-box img {
-    width: 300px;
-    height: 100%;
 
-}
+
+
+
+
+
 
 /*Body-1 Elements*/
 
 .body-1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #F9FAF8;
     padding-right: 10%;
     padding-left: 10%;
+
+    border: 1px solid black;
+
 }
 
+.b1-hf-wrapper {
+ width: 100%;
+}
 
 
 .b1-header{
@@ -147,15 +170,19 @@ a {
     justify-content: center;
     text-align: center;
 
+    margin-bottom: 20px;
+
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+
 }
 
 .b1-img-subtext {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-direction: row;
+    flex-grow: 1;
 }
 
 
@@ -217,7 +244,7 @@ a {
     align-items: center;
     
     background-color: #F9FAF8;
-    height: 45vh;
+    min-height: 35vh;
 }
 
 .b3-tot-box {
