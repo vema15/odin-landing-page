@@ -1,5 +1,8 @@
 /*Type Selectors*/
 
+
+
+
 body {
     height: 100vh;
     margin: 0;
@@ -37,13 +40,13 @@ a {
 
 .header,
 .footer {
-    min-height:15vh;
+    min-height:10vh;
 }
 
 .sub-header,
 .body-1,
 .body-2 {
-    min-height: 45vh;
+    min-height: 55vh;
 }
 
 
@@ -69,6 +72,7 @@ a {
 
 }
 
+
 .header-r-box {
     display: flex;
     gap: 15px;
@@ -81,52 +85,21 @@ a {
 
 .sub-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-right: 5%;
     padding-left: 5%;
-    gap: 10px;
-
-    
-    
+    padding-right: 5%;
 }
 
-.sh-l-box,
-.sh-r-box {
-    display: flex;
-    width: 50%;
-    height: 50%;
 
-    border: 1px solid black;
-}
 
 .sh-l-box {
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 7px;
-    height: 50%;
-}
-
-.sh-l-box button{    
-    background-color: #3882F6;
-    color: #F9FAF8;
-
-    width: 100px;
-    border-radius: 10px;
-    padding: 5px 5px 5px 5px;
-    border: none;
-
-
-}
-
-.sh-lb-body,
-.sh-lb-head,
-.sh-lb-su {
     display: flex;
-    width: auto;
-    
+    flex-direction: column;
+    gap: 5px;
+    height: fit-content;
+    width: 50%;
 }
-
-
 
 .sh-lb-head {
     font-size: 48px;
@@ -139,12 +112,30 @@ a {
     color: #E5E7EB;
 }
 
+.sh-lb-su button {
+    color: #F9FAF8;
+    border: none;
+    background-color: #3882F6;
 
+    padding: 2% 3% 2% 3%;
+    width: 100px;
+    border-radius: 10px;
+}
 
+.sh-r-box {
+   display: flex;
+   align-items: center;
+   margin-left: 2.5%;
 
+    height: fit-content;
+    overflow: hidden;
+    max-width: 50%;
+}
 
-
-
+.sh-r-box img {
+    height: 200px;
+    object-fit: contain;
+}
 
 /*Body-1 Elements*/
 
@@ -156,7 +147,6 @@ a {
     padding-right: 10%;
     padding-left: 10%;
 
-    border: 1px solid black;
 
 }
 
@@ -244,7 +234,7 @@ a {
     align-items: center;
     
     background-color: #F9FAF8;
-    min-height: 35vh;
+    min-height: 45vh;
 }
 
 .b3-tot-box {
